@@ -10,6 +10,9 @@
 
 body {
   background: #1e262b;
+}
+
+main {
   overflow: hidden;
 }
 
@@ -60,17 +63,25 @@ header nav::before {
   background: #263846;
 }
 
+@media (max-width: 1200px) {
+  header nav::before {
+    width: 2000px;
+    height: 2000px;
+  }
+}
+
 @media (max-width: 768px) {
   header nav::before {
-    width: 2500px;
-    height: 2500px;
+    width: 1500px;
+    height: 1500px;
   }
 }
 
 @media (max-width: 576px) {
   header nav::before {
-    width: 2000px;
-    height: 2000px;
+    width: 900px;
+    height: 900px;
+    bottom: -280px;
   }
 }
 
@@ -109,6 +120,13 @@ header ul {
 @media (max-width: 768px) {
   header ul {
     min-width: 300px;
+  }
+}
+
+@media (max-width: 290px) {
+  header ul {
+    width: 95%;
+    min-width: 0;
   }
 }
 
@@ -151,7 +169,14 @@ header a {
 @media (max-width: 768px) {
   .intro h1,
   .intro h2 {
-    font-size: 12vw;
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 290px) {
+  .intro h1,
+  .intro h2 {
+    font-size: 20vw;
   }
 }
 
@@ -160,7 +185,19 @@ header a {
     margin-top: 0em;
   }
   .intro h3 {
-    font-size: 4.25vw;
+    font-size: 1.25em;
+  }
+}
+
+@media (max-width: 290px) {
+  .intro h3 {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .intro {
+    min-height: 16em;
   }
 }
 
