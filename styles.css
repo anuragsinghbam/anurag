@@ -170,6 +170,12 @@ header a {
   }
 }
 
+@media (max-width: 1400px) {
+  .intro {
+    min-height: 19em;
+  }
+}
+
 .intro::before {
   content: '';
   position: absolute;
