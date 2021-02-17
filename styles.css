@@ -179,7 +179,17 @@ header a {
 
 @media (max-width: 1400px) {
   .intro {
-    min-height: 19em;
+    min-height: 18em;
+  }
+}
+
+@media (max-width: 576px) {
+  .intro {
+    min-height: 14em;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-bottom: 2.5em;
   }
 }
 
@@ -196,6 +206,14 @@ header a {
   background: #263846;
 }
 
+@media (max-width: 2050px) {
+  .intro::before {
+    width: 6000px;
+    height: 5000px;
+    top: -4685px;
+  }
+}
+
 @media (max-width: 1400px) {
   .intro::before {
     width: 4000px;
@@ -204,11 +222,27 @@ header a {
   }
 }
 
+@media (max-width: 768px) {
+  .intro::before {
+    width: 2000px;
+    height: 2000px;
+    top: -1710px;
+  }
+}
+
 @media (max-width: 576px) {
   .intro::before {
-    width: 3000px;
-    height: 3000px;
-    top: -2760px;
+    width: 1000px;
+    height: 1000px;
+    top: -750px;
+  }
+}
+
+@media (max-width: 576px) {
+  .intro::before {
+    width: 1000px;
+    height: 1000px;
+    top: -750px;
   }
 }
 
@@ -226,7 +260,7 @@ header a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 500px;
+  margin-top: 10px;
 }
 
 .my-pic .profile-pic {
@@ -265,11 +299,5 @@ header a {
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.2;
-}
-
-@media (max-width: 1400px) {
-  .my-pic {
-    min-height: 300px;
-  }
 }
 /*# sourceMappingURL=styles.css.map */
