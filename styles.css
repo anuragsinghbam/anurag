@@ -249,6 +249,12 @@ header a {
   margin-bottom: -5px;
 }
 
+@media (max-width: 1920px) {
+  .my-pic .profile-pic {
+    width: 300px;
+  }
+}
+
 @media (max-width: 1400px) {
   .my-pic .profile-pic {
     width: 200px;
@@ -269,7 +275,7 @@ header a {
 
 @media (max-width: 1400px) {
   .my-pic {
-    min-height: 400px;
+    min-height: 300px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
