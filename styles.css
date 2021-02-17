@@ -236,7 +236,7 @@ header a {
 }
 
 .my-pic .profile-pic {
-  width: 250px;
+  width: 400px;
   border-radius: 50%;
   overflow: hidden;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -249,6 +249,12 @@ header a {
   margin-bottom: -5px;
 }
 
+@media (max-width: 1400px) {
+  .my-pic .profile-pic {
+    width: 200px;
+  }
+}
+
 .my-pic .img-subtitle {
   width: 95%;
   max-width: 600px;
@@ -259,5 +265,11 @@ header a {
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.25;
+}
+
+@media (max-width: 1400px) {
+  .my-pic {
+    min-height: 400px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
