@@ -148,6 +148,13 @@ header a {
   }
 }
 
+@media (max-width: 576px) {
+  .intro h1,
+  .intro h2 {
+    font-size: 3em;
+  }
+}
+
 @media (max-width: 290px) {
   .intro h1,
   .intro h2 {
@@ -197,30 +204,11 @@ header a {
   }
 }
 
-@media (max-width: 768px) {
-  .intro::before {
-    width: 1500px;
-    height: 1500px;
-  }
-}
-
 @media (max-width: 576px) {
   .intro::before {
-    width: 900px;
-    height: 900px;
-    bottom: -280px;
-  }
-}
-
-@media (max-width: 576px) {
-  .intro {
-    min-height: 16em;
-  }
-}
-
-@media (max-width: 576px) {
-  .intro {
-    min-height: 16em;
+    width: 3000px;
+    height: 3000px;
+    top: -2760px;
   }
 }
 
