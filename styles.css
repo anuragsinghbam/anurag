@@ -14,7 +14,6 @@ body {
 
 main {
   overflow: hidden;
-  /* background-color: rgb(60, 85, 39); */
 }
 
 a {
@@ -33,7 +32,9 @@ header {
   padding: 1.5em 0;
   -webkit-box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.3), 0 4px 10px 0 black;
           box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.3), 0 4px 10px 0 black;
-  position: relative;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
   background: #2e3944;
 }
 
@@ -49,41 +50,6 @@ header nav {
   width: 100%;
   max-width: 1500px;
   overflow: hidden;
-}
-
-header nav::before {
-  content: '';
-  position: absolute;
-  width: 5000px;
-  height: 5000px;
-  z-index: -1;
-  border-radius: 50%;
-  bottom: -350px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  background: #263846;
-}
-
-@media (max-width: 1200px) {
-  header nav::before {
-    width: 2000px;
-    height: 2000px;
-  }
-}
-
-@media (max-width: 768px) {
-  header nav::before {
-    width: 1500px;
-    height: 1500px;
-  }
-}
-
-@media (max-width: 576px) {
-  header nav::before {
-    width: 900px;
-    height: 900px;
-    bottom: -280px;
-  }
 }
 
 header .logo {
@@ -150,6 +116,7 @@ header a {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 20em;
+  position: relative;
 }
 
 .intro h1 {
@@ -165,6 +132,13 @@ header a {
 
 .intro h3 {
   font-weight: 400;
+}
+
+@media (max-width: 1400px) {
+  .intro h1,
+  .intro h2 {
+    font-size: 4em;
+  }
 }
 
 @media (max-width: 768px) {
@@ -196,6 +170,48 @@ header a {
   }
 }
 
+.intro::before {
+  content: '';
+  position: absolute;
+  width: 5000px;
+  height: 5000px;
+  z-index: -2;
+  border-radius: 50%;
+  top: -4690px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background: #263846;
+}
+
+@media (max-width: 1400px) {
+  .intro::before {
+    width: 4000px;
+    height: 4000px;
+    top: -3690px;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro::before {
+    width: 1500px;
+    height: 1500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .intro::before {
+    width: 900px;
+    height: 900px;
+    bottom: -280px;
+  }
+}
+
+@media (max-width: 576px) {
+  .intro {
+    min-height: 16em;
+  }
+}
+
 @media (max-width: 576px) {
   .intro {
     min-height: 16em;
@@ -216,7 +232,7 @@ header a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 600px;
+  min-height: 500px;
 }
 
 .my-pic .profile-pic {
